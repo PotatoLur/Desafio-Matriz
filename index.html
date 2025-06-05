@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Matriz</title>
+    <script src="matriz.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="gerarMatriz()">
+    <h1>Desafio Matriz</h1>
+    <label>Inserir linha</label>
+    <input type="text" id="ipt_linha">
+    <br>
+    <label>Inserir coluna</label>
+    <input type="text" id="ipt_coluna">
+    <br>
+    <button onclick="escavar()" id="btn_escavar">Escavar!</button>
+    <div class="matriz" id="div_matriz"></div>
+    <div id="div_resultado"></div>
+    <div id="div_continuar">
+        <button onclick="continuar()">Continuar</button>
+    </div>
+</body>
+</html>

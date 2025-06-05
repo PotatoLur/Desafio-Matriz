@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#div_continuar {
+    display: none;
+}
+
+button {
+    padding: 5px;
+    border: solid black 2px;
+    border-radius: 5px;
+}
+
+.dado {
+    display: flex;
+    background-color: #85fa85;
+    border: black solid 2px;
+    border-radius: 2px;
+    font-size: 0.5px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    color: #85fa85;
+}
+
+.selecionado {
+    background-color: red;
+}
+
+.matriz {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    width: 240px;
+}
