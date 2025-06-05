@@ -48,9 +48,11 @@ function escavar() {
         div_resultado.innerHTML = 'Você ganhou um tesouro!';
         div_resultado.innerHTML += `<br>Total de tesouros: ${sessionStorage.getItem('tesouro')}`;
     } else if (matriz_principal[linha][coluna] == 2) {
-        div_resultado.innerHTML = 'Errou.';
+        div_resultado.innerHTML = 'Perdeu!';
         div_continuar.style.display = 'flex';
         btn_escavar.style.display = 'none';
+    } else {
+        console.log('Vazio')
     }
     matriz_principal[linha][coluna] *= -1;
 
@@ -66,5 +68,6 @@ function continuar() {
 
 function estatisticas() {
     var tesouro = sessionStorage.getItem('tesouro');
-    div.innerHTML = `Você atingiu um total de ${tesouro} tesouros`;
+    div.innerHTML = `Você atingiu um total de ${tesouro} tesouros <br>
+    <img src="https://d1muf25xaso8hp.cloudfront.net/https://img.criativodahora.com.br/2024/08/criativo-66c7e8c08fc6bimg-2024-08-2266c7e8c08fc6e.jpg?w=1000&h=&auto=compress&dpr=1&fit=max" alt="">`;
 }

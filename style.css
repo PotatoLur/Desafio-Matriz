@@ -5,6 +5,27 @@
 
 h1 {
     font-size: 30px;
+    background-color: black;
+    width: fit-content;
+}
+
+label {
+    background-color: black;
+    width: fit-content;
+}
+
+#div_resultado {
+    background-color: black;
+    width: fit-content;
+}
+
+body {
+    background-image: url(https://static.wikia.nocookie.net/mundo-animal/images/b/bd/Mus.jpg/revision/latest/scale-to-width-down/605?cb=20140513233051&path-prefix=pt);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px;
 }
 
 .container {
@@ -21,6 +42,10 @@ h1 {
 #div_continuar {
     display: none;
     gap: 10px;
+}
+
+img {
+    width: 450px;
 }
 
 button {
