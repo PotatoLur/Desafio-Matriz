@@ -10,17 +10,19 @@
 
 <body onload="gerarMatriz()">
     <h1>Desafio Matriz</h1>
-    <label>Inserir linha</label>
-    <input type="text" id="ipt_linha">
-    <br>
-    <label>Inserir coluna</label>
-    <input type="text" id="ipt_coluna">
-    <br>
-    <button onclick="escavar()" id="btn_escavar">Escavar!</button>
-    <div class="matriz" id="div_matriz"></div>
-    <div id="div_resultado"></div>
-    <div id="div_continuar">
-        <button onclick="continuar()">Continuar</button>
+    <div class="container">
+        <label>Inserir linha</label>
+        <input type="text" id="ipt_linha">
+        <br>
+        <label>Inserir coluna</label>
+        <input type="text" id="ipt_coluna">
+        <br>
+        <button onclick="escavar()" id="btn_escavar">Escavar!</button>
+        <div class="matriz" id="div_matriz"></div>
+        <div id="div_resultado"></div>
+        <div id="div_continuar">
+            <button onclick="continuar()">Continuar</button>
+        </div>
     </div>
 </body>
 </html>

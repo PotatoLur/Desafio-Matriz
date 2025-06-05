@@ -43,9 +43,10 @@ function escavar() {
     }
 
     if (matriz_principal[linha][coluna] == 1) {
-        div_resultado.innerHTML = 'Você ganhou um tesouro!';
         contadorTesouro += 1;
         sessionStorage.setItem('tesouro', contadorTesouro)
+        div_resultado.innerHTML = 'Você ganhou um tesouro!';
+        div_resultado.innerHTML += `<br>Total de tesouros: ${sessionStorage.getItem('tesouro')}`;
     } else if (matriz_principal[linha][coluna] == 2) {
         div_resultado.innerHTML = 'Errou.';
         div_continuar.style.display = 'flex';
@@ -53,9 +54,10 @@ function escavar() {
     }
     matriz_principal[linha][coluna] *= -1;
 
-    div_selecionada = document.getElementById(`div-${linha}${coluna}`)
-    div_selecionada.classList.add('selecionado');
-    gerarMatriz(matriz_principal)
+    const div_selecionada = document.getElementById(`div-${linha}${coluna}`).classList;
+    div_selecionada.add('selecionado');
+
+    gerarMatriz(matriz_principal);
 }
 
 function continuar() {
